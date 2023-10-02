@@ -73,6 +73,7 @@ ZSH_THEME="random"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.aliases.zsh
 
 # User configuration
 
