@@ -1,0 +1,12 @@
+matches:
+  - trigger: ";arwr"
+    replace: "→"
+
+  - trigger: ";arwl"
+    replace: "←"
+
+  - trigger: ";arwu"
+    replace: "↑"
+
+  - trigger: ";arwd"
+    replace: "↓"

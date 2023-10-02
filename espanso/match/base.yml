@@ -39,3 +39,5 @@ matches:
 # Import other matches from external locations
 imports:
   - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/misc.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/arrows.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/personal.yml"
