@@ -1,0 +1,6 @@
+matches:
+  - trigger: ";hi"
+    replace: |
+      exactly as you see
+      will appear these three
+      lines of poetry
