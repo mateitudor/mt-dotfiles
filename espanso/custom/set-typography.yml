@@ -1,0 +1,6 @@
+matches:
+  - trigger: ";qr1"
+    replace: "„$|$”"
+
+  - trigger: ";qr2"
+    replace: "«$|$»"

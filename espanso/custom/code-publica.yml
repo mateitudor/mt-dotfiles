@@ -1,0 +1,101 @@
+matches:
+  # Newsletters
+  #▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+
+  # Headings
+  # H1
+  - trigger: ";pn-h1"
+    replace: |
+      <h1 class="heading" style="color: #ff6e0e; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 28px; font-weight: 700; line-height: 36px; margin-top: 0px;"></h1>
+
+  # Paragraphs
+  - trigger: ";pn-p"
+    replace: |
+      <p style="font-family: 'Piazzolla', serif; font-size: 20px; font-weight: 400; line-height: 1.6;"></p>
+
+  # Inline links
+  - trigger: ";pn-link"
+    replace: |
+      <a class="linkInline" style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 20px; font-weight: 400; text-decoration: none; border-bottom: 2px solid #ff4635; color: #000000;" href="" target="_blank" rel="noopener"></a>
+
+  # Buttons
+  - trigger: ";pn-button"
+    replace: |
+      <a class="link_block" href="https://www.publica.ro/toate-titlurile.html" target="_blank" style="display: block; background-color: #fd6b52; color: #ffffff; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 17px; font-weight: 700; line-height: 60px; letter-spacing: 0.4px; text-decoration: none; text-align: center; width: 180px; margin: 1.4em 0px 0px 0px; -webkit-text-size-adjust:none; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; transition: background-color 0.4s ease;">Comandă aici</a>
+
+  # Creates a card with a shadow
+  # Usually used for blockquotes
+  - trigger: ";pn-card"
+    replace: |
+      <div class="card" style="background-color: #ffffff; border: 1px solid #F3F5F7; margin-top: 40px; padding: 28px; border-radius: 16px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.025), 0px 0px 80px rgba(0, 0, 0, 0.05);">
+        <blockquote class="blockquote" style="padding: 0; margin: 0;">
+          <p class="paragraph" style="font-family: 'Piazzolla', serif; font-size: 20px; font-weight: 400; line-height: 32px; color: #000000;"></p>
+            <footer><cite style="color: #a4adb4; display: block; margin-top: 12px; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 18px; font-weight: 500; font-style: normal !important; line-height: 28px; text-decoration: none;"></cite></footer>
+        </blockquote>
+      </div>
+
+  # Adds the Gold Subscriber specific copy
+  - trigger: ";pn-gold"
+    replace: |
+      <p class="paragraph"style="font-family: 'Piazzolla', serif; font-size: 20px; font-weight: 400; line-height: 32px; margin-bottom: 20px;">
+        Fiindcă ești cititor gold, beneficiezi de <span class="text_highlight">25% discount</span> la achiziția cărților noastre, inclusiv la cartea anunțată în acest newsletter. Vei vizualiza reducerea după <a class="inline_link textColor_black borderColor_secondary" style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 20px; font-weight: 400; line-height: 32px; text-decoration: none; padding: 2px 0px; border-bottom: 2px solid;" href="https://www.publica.ro/customer/account/login/" target="_blank" rel="noopener">autentificarea în contul personal</a>.
+      </p>
+      <h1 class="heading" style="color: #ff6e0e; font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 28px; font-weight: 700; line-height: 36px; margin-top: 0px;">Iată câteva lecturi complementare:</h1>
+
+  # Ebooks
+  #▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+
+  # H1
+  - trigger: ";pe-h1"
+    replace: |
+      <h1 class="marginTop-l marginBottom-m">$|$</h1>
+  # H2
+  - trigger: ";pe-h2"
+    replace: |
+      <h2 class="marginTop-l marginBottom-s">$|$</h2>
+  # H3
+  - trigger: ";pe-h3"
+    replace: |
+      <h3 class="marginTop-l marginBottom-s">$|$</h3>
+  # Footnotes
+  - trigger: ";pe-fl"
+    replace: <a class="footnote-link" epub:type="noteref" aria-label="notă" id="footnote_1_backlink" href="#footnote_1">1</a>
+  - trigger: ";pe-fn"
+    replace: |
+      <div class="footnote-container">
+        <hr/>
+        <h3 class="fontSize-m marginTop-m marginBottom-s">Note:</h3>
+        <p id="footnote_1" role="doc-footnote" epub:type="footnote">
+          <a class="link_block" href="#footnote_1_backlink">1</a>
+          Institutul de Tehnologie din Massachusetts (n.t.).
+        </p>
+      </div>
+  # Endnotes
+  - trigger: ";pe-el"
+    replace: <a id="body_01_1_backlink" class="endnote-link" href="end_matter_02.xhtml#body_01_1">1</a>
+  # Endnote container
+  - trigger: ";pe-en"
+    replace: |
+      <div class="endnote-container">
+        <div class="endnote" id="body_10_1">
+          <p class="marginBottom-m">
+            <a class="backlink" href="body_10.xhtml#body_10_1_backlink">1&#9166;</a>
+            Jack Zenger, Joe Folkman și Scott Edinger, „How Extraordinary Leaders Double Profits”, <em>Chief Learning Officer</em>, iulie 2009.
+          </p>
+        </div>
+      </div>
+  # Images
+  - trigger: ";pe-img"
+    replace: |
+      <figure role="group">
+        <img src="" alt="" />
+        <figcaption></figcaption>
+      </figure>
+  # Quote with author
+  - trigger: ";pe-quote"
+    replace: |
+      <figure>
+        <blockquote>
+        </blockquote>
+        <figcaption></figcaption>
+      </figure>

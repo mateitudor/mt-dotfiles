@@ -39,5 +39,10 @@ matches:
 # Import other matches from external locations
 imports:
   - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/misc.yml"
-  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/arrows.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/symbols-arrows.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/symbols-misc.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/symbols-progress.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/set-typography.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/code-publica.yml"
+  - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/code-css.yml"
   - "/Users/mateitudor/Studio/Code/_ Setup/espanso/custom/personal.yml"
