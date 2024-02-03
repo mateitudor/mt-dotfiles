@@ -7,6 +7,6 @@ matches:
 
   - trigger: ";arwu"
     replace: "↑"
-    
+
   - trigger: ";arwd"
     replace: "↓"

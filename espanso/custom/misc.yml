@@ -1,3 +1,11 @@
 matches:
   - trigger: ";hi"
     replace: "Hi there!"
+
+  - trigger: ";now"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%F @ %T GMT %Z"
